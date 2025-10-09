@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTB - Boogie Town Burger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/white logo1.png" alt="BTB Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#about">ABOUT US</a>
+            <a href="#menu">MENU</a>
+            <a href="#testimonials">REVIEWS</a>
+            <a href="#location">LOCATION</a>
+            <a href="#order">ORDER NOW!</a>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="text-section">
+            <h1 class="main-title">
+                BOOGIE<br>
+                TOWN<br>
+                BURGER
+            </h1>
+            <p class="hero-tagline">Bringing the '70s back with retro vibes</p>
+            <a href="#menu" class="cta-button">EXPLORE MENU</a>
+        </div>
+        <div class="mascot-section">
+            <img src="assets/mascot.png" alt="BTB Mascot" class="mascot">
+        </div>
+    </main>
+
+    <div class="scroll-down" onclick="scrollToNext()">
+        <span>SCROLL DOWN</span>
+        <div class="scroll-arrow">↓</div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">ABOUT US</h2>
+            <div class="about-content">
+                <h3>Welcome to Boogie Town - Where the '70s Come Alive!</h3>
+                <p>Step into BTB (Boogie Town Burger) and take a groovy trip back to the golden era of the 1970s. More than just a burger joint, we're a time machine that transports you to the heart of retro America, right here in Qatar.</p>
+                <p>Born from a passion for the golden age of diners and the soulful vibes of the '70s, Boogie Town Burger brings authentic retro charm to the modern Qatar dining scene. We believe that great food should come with great atmosphere.</p>
+                <p>At BTB, we're not just serving burgers; we're serving memories. From our signature retro burgers to our vintage fries, each bite is designed to transport you back to simpler times.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">MENU</h2>
+
+            <!-- Menu Navigation -->
+            <div class="menu-nav">
+                <button class="menu-nav-btn active" data-category="burgers">BURGERS</button>
+                <button class="menu-nav-btn" data-category="fries">FRIES & SIDES</button>
+                <button class="menu-nav-btn" data-category="bites">BITES</button>
+                <button class="menu-nav-btn" data-category="shrimp">SHRIMP</button>
+            </div>
+
+            <!-- All Menu Items -->
+            <div class="menu-grid" id="menu-items">
+                <!-- Burgers -->
+                <div class="menu-item" data-category="burgers">
+                    <img src="menu/ORB Tasty Classic Chicken Burger.jpg" alt="ORB Tasty Classic Chicken Burger">
+                    <div class="menu-item-content">
+                        <h4>Tasty Classic Chicken Burger</h4>
+                        <p class="menu-description">Crispy chicken breast with lettuce, tomato, and BTB special sauce</p>
+                        <p class="price">24 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <img src="menu/Flat Tasty Bird.jpg" alt="Flat Tasty Bird">
+                    <div class="menu-item-content">
+                        <h4>Flat Tasty Bird</h4>
+                        <p class="menu-description">Grilled chicken breast with special BTB seasoning and fresh vegetables</p>
+                        <p class="price">28 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <img src="menu/Flat Chick-A-Boom.jpg" alt="Flat Chick-A-Boom">
+                    <div class="menu-item-content">
+                        <h4>Flat Chick-A-Boom</h4>
+                        <p class="menu-description">Spicy chicken burger with boom sauce and crispy lettuce</p>
+                        <p class="price">28 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <img src="menu/ORB Mac Style Burger.png" alt="ORB Mac Style Burger">
+                    <div class="menu-item-content">
+                        <h4>Mac Style Burger</h4>
+                        <p class="menu-description">Classic beef patty with special mac sauce and pickles</p>
+                        <p class="price">23 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <img src="menu/URB Onion Smash Burger.png" alt="URB Onion Smash Burger">
+                    <div class="menu-item-content">
+                        <h4>Onion Smash Burger</h4>
+                        <p class="menu-description">Smashed beef patty with caramelized onions and cheese</p>
+                        <p class="price">23 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <img src="menu/Flat Animal Burger.jpg" alt="Flat Animal Burger">
+                    <div class="menu-item-content">
+                        <h4>Flat Animal Burger</h4>
+                        <p class="menu-description">Double beef patty with animal style sauce and grilled onions</p>
+                        <p class="price">28 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <img src="menu/Retro Flat Burger.png" alt="Retro Flat Burger">
+                    <div class="menu-item-content">
+                        <h4>Retro Flat Burger</h4>
+                        <p class="menu-description">Classic retro-style beef burger with vintage flavors</p>
+                        <p class="price">28 QR</p>
+                    </div>
+                </div>
+
+                <!-- Fries & Sides -->
+                <div class="menu-item" data-category="fries">
+                    <img src="menu/Cheese Burger Fries.png" alt="Cheese Burger Fries">
+                    <div class="menu-item-content">
+                        <h4>Cheese Burger Fries</h4>
+                        <p class="menu-description">Crispy fries topped with burger bits, melted cheese, and special sauce</p>
+                        <p class="price">29 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="fries">
+                    <img src="menu/Vintage Fries.jpg" alt="Vintage Fries">
+                    <div class="menu-item-content">
+                        <h4>Vintage Fries</h4>
+                        <p class="menu-description">Classic golden fries with old-school seasoning</p>
+                        <p class="price">19 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="fries">
+                    <img src="menu/Funky Fries.jpg" alt="Funky Fries">
+                    <div class="menu-item-content">
+                        <h4>Funky Fries</h4>
+                        <p class="menu-description">Seasoned fries with funky spices and dipping sauces</p>
+                        <p class="price">27 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="fries">
+                    <img src="menu/Cajun Fries.jpg" alt="Cajun Fries">
+                    <div class="menu-item-content">
+                        <h4>Cajun Fries</h4>
+                        <p class="menu-description">Spicy cajun-seasoned fries with a kick</p>
+                        <p class="price">21 QR</p>
+                    </div>
+                </div>
+
+                <!-- Bites & Appetizers -->
+                <div class="menu-item" data-category="bites">
+                    <img src="menu/Tasty Bites.jpg" alt="Tasty Bites">
+                    <div class="menu-item-content">
+                        <h4>Tasty Bites</h4>
+                        <p class="menu-description">Crispy chicken bites with signature dipping sauce</p>
+                        <p class="price">27 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="bites">
+                    <img src="menu/Angry Bites.png" alt="Angry Bites">
+                    <div class="menu-item-content">
+                        <h4>Angry Bites</h4>
+                        <p class="menu-description">Spicy chicken bites with hot sauce and cooling ranch</p>
+                        <p class="price">29 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="bites">
+                    <img src="menu/Vintage Bites.jpg" alt="Vintage Bites">
+                    <div class="menu-item-content">
+                        <h4>Vintage Bites</h4>
+                        <p class="menu-description">Classic-style chicken bites with retro seasoning</p>
+                        <p class="price">25 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="bites">
+                    <img src="menu/Mozzarella Bar.png" alt="Mozzarella Bar">
+                    <div class="menu-item-content">
+                        <h4>Mozzarella Bar</h4>
+                        <p class="menu-description">Golden mozzarella sticks with marinara sauce</p>
+                        <p class="price">29 QR</p>
+                    </div>
+                </div>
+
+                <!-- Shrimp -->
+                <div class="menu-item" data-category="shrimp">
+                    <img src="menu/Honey Sriracha Shrimp.png" alt="Honey Sriracha Shrimp">
+                    <div class="menu-item-content">
+                        <h4>Honey Sriracha Shrimp</h4>
+                        <p class="menu-description">Crispy shrimp glazed with honey sriracha sauce</p>
+                        <p class="price">29 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="shrimp">
+                    <img src="menu/6 Pcs Nashville Shrimp Classic Meal.jpg" alt="6 Pcs Nashville Shrimp Classic">
+                    <div class="menu-item-content">
+                        <h4>Nashville Shrimp Classic</h4>
+                        <p class="menu-description">6 pieces of Nashville-style shrimp with classic seasoning</p>
+                        <p class="price">41 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="shrimp">
+                    <img src="menu/6 Pcs Nashville Shrimp Mild Meal.jpg" alt="6 Pcs Nashville Shrimp Mild">
+                    <div class="menu-item-content">
+                        <h4>Nashville Shrimp Mild</h4>
+                        <p class="menu-description">6 pieces of Nashville shrimp with mild spice level</p>
+                        <p class="price">43 QR</p>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="shrimp">
+                    <img src="menu/6 Pcs Nashville Shrimp Extra Hot.jpg" alt="6 Pcs Nashville Shrimp Extra Hot">
+                    <div class="menu-item-content">
+                        <h4>Nashville Shrimp Extra Hot</h4>
+                        <p class="menu-description">6 pieces of Nashville shrimp with extra hot seasoning</p>
+                        <p class="price">45 QR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">CUSTOMER REVIEWS</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">AH</div>
+                            <div class="reviewer-details">
+                                <h5>Ahmed Al-Rashid</h5>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="review-platform">Google Reviews</div>
+                    </div>
+                    <p>"Best retro burger experience in Doha! The vintage atmosphere and amazing food make BTB my favorite spot. Been coming here for 6 months now."</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">SJ</div>
+                            <div class="reviewer-details">
+                                <h5>Sarah Johnson</h5>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="review-platform">Zomato</div>
+                    </div>
+                    <p>"Love the 70s vibes and the Nashville shrimp is absolutely incredible. Great place for families! Kids love the retro atmosphere."</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">OH</div>
+                            <div class="reviewer-details">
+                                <h5>Omar Hassan</h5>
+                                <div class="stars">★★★★★</div>
+                            </div>
+                        </div>
+                        <div class="review-platform">Talabat</div>
+                    </div>
+                    <p>"The Flat Animal Burger is a masterpiece. BTB brings authentic American diner experience to Qatar. Quick delivery too!"</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">FK</div>
+                            <div class="reviewer-details">
+                                <h5>Fatima Al-Kuwari</h5>
+                                <div class="stars">★★★★☆</div>
+                            </div>
+                        </div>
+                        <div class="review-platform">Snoonu</div>
+                    </div>
+                    <p>"Amazing food quality and the retro theme is perfectly executed. Highly recommend the Tasty Bites! Only complaint is the wait time during peak hours."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="section-title">FOLLOW THE BOOGIE</h2>
+            <div class="social-content">
+                <p class="social-description">Join our community for the latest burgers, deals, and behind-the-scenes fun!</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/btbqa/" class="social-link" target="_blank">
+                        <span>📸</span>
+                        INSTAGRAM
+                        <small>@btbqa</small>
+                    </a>
+                    <a href="https://www.facebook.com/people/Btbqa/61569511425170/" class="social-link" target="_blank">
+                        <span>👍</span>
+                        FACEBOOK
+                        <small>Btbqa</small>
+                    </a>
+                    <a href="https://www.tiktok.com/@btbqa" class="social-link" target="_blank">
+                        <span>🎵</span>
+                        TIKTOK
+                        <small>@btbqa</small>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2 class="section-title">LOCATIONS</h2>
+            <div class="locations-grid">
+                <div class="location-item">
+                    <div class="location-header">
+                        <h3>Alkhraytiyat</h3>
+                        <div class="location-badge">MAIN</div>
+                    </div>
+                    <p class="location-address">Alkhraytiyat Beach Road, Qatar</p>
+                    <p class="location-phone">+974 5148 8884</p>
+                    <p class="location-hours">Open Daily: 12:00 PM - 3:00 AM</p>
+                    <div class="location-actions">
+                        <a href="https://maps.google.com" class="location-btn" target="_blank">VIEW MAP</a>
+                        <a href="https://www.google.com/search?q=BTB+Alkhraytiyat+reviews" class="location-btn" target="_blank">REVIEWS</a>
+                        <a href="https://snoonu.com/restaurants/btb-restaurant" class="location-btn" target="_blank">ORDER</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-header">
+                        <h3>Al Wakrah</h3>
+                        <div class="location-badge">CITY</div>
+                    </div>
+                    <p class="location-address">Al Wakrah City Center, Qatar</p>
+                    <p class="location-phone">+974 3339 9744</p>
+                    <p class="location-hours">Open Daily: 12:00 PM - 3:00 AM</p>
+                    <div class="location-actions">
+                        <a href="https://maps.google.com" class="location-btn" target="_blank">VIEW MAP</a>
+                        <a href="https://www.google.com/search?q=BTB+Al+Wakrah+reviews" class="location-btn" target="_blank">REVIEWS</a>
+                        <a href="https://talabat.com" class="location-btn" target="_blank">ORDER</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-header">
+                        <h3>Sealine</h3>
+                        <div class="location-badge">DESERT</div>
+                    </div>
+                    <p class="location-address">Sealine Resort Area, Qatar</p>
+                    <p class="location-phone">+974 5146 6664</p>
+                    <p class="location-hours">Open Daily: 12:00 PM - 3:00 AM</p>
+                    <div class="location-actions">
+                        <a href="https://maps.google.com" class="location-btn" target="_blank">VIEW MAP</a>
+                        <a href="https://www.google.com/search?q=BTB+Sealine+reviews" class="location-btn" target="_blank">REVIEWS</a>
+                        <a href="https://snoonu.com/restaurants/btb-restaurant" class="location-btn" target="_blank">ORDER</a>
+                    </div>
+                </div>
+                <div class="location-item">
+                    <div class="location-header">
+                        <h3>Abu Hamour</h3>
+                        <div class="location-badge">CITY</div>
+                    </div>
+                    <p class="location-address">Abu Hamour District, Doha</p>
+                    <p class="location-phone">+974 5000 3663</p>
+                    <p class="location-hours">Open Daily: 12:00 PM - 3:00 AM</p>
+                    <div class="location-actions">
+                        <a href="https://maps.google.com" class="location-btn" target="_blank">VIEW MAP</a>
+                        <a href="https://www.google.com/search?q=BTB+Abu+Hamour+reviews" class="location-btn" target="_blank">REVIEWS</a>
+                        <a href="https://talabat.com" class="location-btn" target="_blank">ORDER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="assets/white logo1.png" alt="BTB Logo" class="footer-logo">
+                    <p>Bringing the '70s back with authentic retro vibes and gourmet burgers across Qatar.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>LOCATIONS</h3>
+                    <p>Alkhraytiyat - Main Branch</p>
+                    <p>Al Wakrah - City Branch</p>
+                    <p>Sealine - Desert View</p>
+                    <p>Abu Hamour - City Branch</p>
+                </div>
+                <div class="footer-section">
+                    <h3>CONTACT</h3>
+                    <p>Order Hotline: +974 4000 0000</p>
+                    <p>info@btbburger.qa</p>
+                    <p>Open Daily: 11:00 AM - 11:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>FOLLOW US</h3>
+                    <p>@btb_qatar</p>
+                    <p>BTB Qatar</p>
+                    <p>@btb_qatar</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Boogie Town Burger. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        function scrollToNext() {
+            document.getElementById('about').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scrolling for all navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling to all links
+            const links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // Menu filtering functionality
+            const menuButtons = document.querySelectorAll('.menu-nav-btn');
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            // Initially show only burgers
+            menuItems.forEach(item => {
+                if (item.getAttribute('data-category') !== 'burgers') {
+                    item.classList.add('hidden');
+                }
+            });
+
+            menuButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    menuButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+
+                    menuItems.forEach(item => {
+                        if (item.getAttribute('data-category') === category) {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            // Navbar scroll effect
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    navbar.style.backgroundColor = 'rgba(255, 51, 51, 0.95)';
+                    navbar.style.backdropFilter = 'blur(10px)';
+                } else {
+                    navbar.style.backgroundColor = '#FF3333';
+                    navbar.style.backdropFilter = 'none';
+                }
+            });
+
+            // Animate elements on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe sections for animation
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(30px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
