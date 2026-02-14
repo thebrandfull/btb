@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'Soap Regular';
+    src: url('../fonts/Soap Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Soap Regular', Arial, sans-serif;
+    background-color: #FF3333;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+/* Header — red bg, white text, like the entire BTB site */
+.links-header {
+    background-color: #FF3333;
+    padding: 50px 20px 25px;
+    text-align: center;
+}
+
+.header-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.links-logo {
+    height: 80px;
+    width: auto;
+    margin-bottom: 12px;
+}
+
+.links-tagline {
+    font-size: 20px;
+    color: white;
+    opacity: 0.9;
+}
+
+/* Content area — stays on Red, cards are white like BTB's location-items and menu-items */
+.links-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Cards — white bg, 15px radius matching BTB's border-radius style */
+.link-card {
+    background: white;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-decoration: none;
+    color: #333;
+    padding: 16px 20px;
+    gap: 14px;
+}
+
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.link-card:active {
+    transform: translateY(-1px);
+}
+
+/* Icon — red circle on white card = great contrast */
+.link-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: #FF3333;
+    color: white;
+}
+
+.link-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* Delivery icons — red bg for white delivery logos */
+.link-icon.delivery-icon {
+    background-color: #FF3333;
+}
+
+.link-icon.delivery-icon img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+}
+
+.link-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.link-info h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #FF3333;
+    line-height: 1.3;
+}
+
+.link-info p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+}
+
+.link-arrow {
+    color: #FF3333;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.link-card:hover .link-arrow {
+    transform: translateX(3px);
+}
+
+/* Section labels — white on red, with white border like BTB section separators */
+.section-label {
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding-left: 4px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Footer — red, white text, subtle separator like BTB */
+.links-footer {
+    text-align: center;
+    padding: 25px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.links-footer p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .links-header {
+        padding: 60px 30px 30px;
+    }
+
+    .links-logo {
+        height: 95px;
+        margin-bottom: 16px;
+    }
+
+    .links-tagline {
+        font-size: 24px;
+    }
+
+    .links-content {
+        padding: 25px 20px 50px;
+    }
+
+    .link-card {
+        padding: 18px 24px;
+    }
+
+    .link-info h3 {
+        font-size: 18px;
+    }
+
+    .link-info p {
+        font-size: 14px;
+    }
+
+    .link-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .link-icon.delivery-icon img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .links-header {
+        padding: 40px 15px 20px;
+    }
+
+    .links-logo {
+        height: 65px;
+    }
+
+    .links-tagline {
+        font-size: 18px;
+    }
+
+    .links-content {
+        padding: 15px 15px 30px;
+        gap: 12px;
+    }
+
+    .link-card {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .link-info h3 {
+        font-size: 14px;
+    }
+
+    .link-info p {
+        font-size: 11px;
+    }
+
+    .link-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .link-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .link-icon.delivery-icon img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .section-label {
+        font-size: 16px;
+    }
+}
+
+@media (hover: none) {
+    .link-card:hover {
+        transform: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+}
