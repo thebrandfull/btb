@@ -35,9 +35,28 @@ body {
     transition: all 0.3s ease;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo img {
     height: 50px;
     width: auto;
+}
+
+.ramadan-icon {
+    width: 24px;
+    height: 24px;
+    stroke: white;
+    fill: none;
+    opacity: 0.8; /* Keep it subtle */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .ramadan-icon {
+    transform: rotate(-10deg) scale(1.1);
 }
 
 .nav-links {
